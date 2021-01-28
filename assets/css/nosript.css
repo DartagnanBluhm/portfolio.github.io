@@ -1,0 +1,13 @@
+body.is-preload .content {
+  filter: none;
+}
+
+body.is-preload .content > * {
+  opacity: 1;
+}
+
+body.is-preload .content #main-content #main-inner {
+  max-height: none;
+  padding: 3rem 2rem;
+  opacity: 1;
+}
