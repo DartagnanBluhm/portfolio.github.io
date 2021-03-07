@@ -30,7 +30,6 @@ body {
 .body-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
   position: relative;
   min-height: 100vh;
@@ -304,8 +303,8 @@ body.transition .content #main-content {
   opacity: 0;
 }
 
-.main-bottom-panel-projects h2 {
-  align-items: center;
+.main-bottom-panel-projects h2{
+  text-align: center;
 }
 
 .main-bottom-panel-projects {
@@ -317,6 +316,8 @@ body.transition .content #main-content {
   -webkit-transition-delay: 0.25s;
   -ms-transition-delay: 0.25s;
   transition-delay: 0.25s;
+  width: 80%;
+  align-self: center;
 }
 
 body.is-preload .main-bottom-panel-projects {
@@ -327,12 +328,23 @@ body.is-preload .main-bottom-panel-projects {
 }
 
 .main-bottom-panel-projects #repo-table {
-  width: 80%;
   text-align: left;
+  width: 100%;
+}
+
+.main-bottom-panel-projects #repo-table #table-headers th{
+  font-size: 14px;
+  font-weight: 550;
+  text-transform: uppercase;
 }
 
 #repo-table, th, td {
+  padding-left: 5px;
+  padding-right: 5px;
   border: 1px;
   border-style: solid;
   border-color: #ffffff;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
 }
