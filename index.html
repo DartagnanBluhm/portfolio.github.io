@@ -6,53 +6,78 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
 </head>
 
-<body>
+<body class="is-preload">
     <div class="body-wrapper">
         <div class="header-nav-container">
             <nav id="global-nav">
                 <div class="nav-content">
-                    <a id="navbar-name-home">Dartagnan Bluhm</a>
-                    <a id="navbar-contact-button">Contact</a>
+                    <ul>
+                        <li id="navbar-name-home"><a onclick=intro()>Dartagnan Bluhm</a></li>
+                        <li id="navbar-contact-button"><a>Contact</a></li>
+                    </ul>
                 </div>
             </nav>
         </div>
         <div class="content">
             <div id="main-content">
-                <div id="main-inner">
+                <div id="main-intro">
                     <h1>Dartagnan Bluhm</h1>
-                    <p>
-                        Aspiring software engineer and machine learning expert through completion of a
+                    <p>Aspiring software engineer and machine learning expert through completion of a
                         Bachelor of Computer Science and continuous development of passion projects.<br />
                     </p>
                 </div>
-                <div id="social-media">
-                    <ul id="social-media-icons">
-                        <li><a href="https://www.linkedin.com/in/DartagnanBluhm/" class="icon brands fa-linked-in">
-                                <span class="label">LinkedIn</span></a></li>
-                        <li><a href="https://www.facebook.com/bluhmdartagnan/" class="icon brands fa-facebook-f">
-                                <span class="label">Facebook</span></a></li>
-                        <li><a href="https://github.com/DartagnanBluhm/" class="icon brands fa-github">
-                                <span class="label">Github</span></a></li>
-                    </ul>
+                <div id="main-aboutme" class="is-hide">
+                    <h1>About Me</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div id="main-work" class="is-hide">
+                    <h1>Work</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div id="main-ambitions" class="is-hide">
+                    <h1>Ambitions</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
             </div>
             <nav>
                 <ul>
-                    <li><a href="#aboutme">About Me</a></li>
-                    <li><a href="#work">Work</a></li>
-                    <li><a href="#ambitions">Ambitions</a></li>
+                    <li><a onclick="aboutme()">About Me</a></li>
+                    <li><a onclick="work()">Work</a></li>
+                    <li><a onclick="ambitions()">Ambitions</a></li>
                 </ul>
             </nav>
         </div>
         <div class="main-bottom-panel-projects">
             <h2>Project Repositories</h2>
+            <table id="repo-table">
+                <tr>
+                    <th>Project Name</th>
+                    <th>Description</th>
+                    <th>Language</th>
+                    <th>Last Commit</th>
+                </tr>
+            </table>
         </div>
         <footer id="footer"></footer>
     </div>
-    <div id="bg"></div>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
