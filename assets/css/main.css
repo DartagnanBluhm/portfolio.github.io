@@ -33,6 +33,7 @@ body {
   justify-content: space-between;
   position: relative;
   min-height: 100vh;
+  padding-top: 5px;
   padding-left: 32px;
   padding-right: 32px;
 }
@@ -347,4 +348,8 @@ body.is-preload .main-bottom-panel-projects {
   font-size: 12px;
   font-weight: 500;
   text-transform: uppercase;
+}
+
+.main-bottom-panel-projects #repo-table #table-headers #table-projectname {
+  width:150px;
 }
