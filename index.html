@@ -18,68 +18,81 @@
                 <div class="nav-content">
                     <ul>
                         <li id="navbar-name-home"><a onclick=intro()>Dartagnan Bluhm</a></li>
-                        <li id="navbar-contact-button"><a>Contact</a></li>
                     </ul>
                 </div>
             </nav>
         </div>
-        <div class="content">
-            <div id="main-content">
-                <div id="main-intro">
-                    <h1>Dartagnan Bluhm</h1>
-                    <p>Aspiring software engineer and machine learning expert through completion of a
-                        Bachelor of Computer Science and continuous development of passion projects.<br />
-                    </p>
+        <div class="body-content">
+            <div class="content">
+                <div id="main-content">
+                    <div id="main-intro">
+                        <h1>Dartagnan Bluhm</h1>
+                        <p>Aspiring software engineer and machine learning expert through completion of a
+                            Bachelor of Computer Science and continuous development of passion projects.</p>
+                    </div>
+                    <div id="main-aboutme" class="is-hide">
+                        <h1>About Me</h1>
+                        <p>As an individual, I pride myself on being a reliable, independent, loyal person who is motivated to produce exceptional results. 
+                            I enjoy experiences that allow me to learn and improve myself, especially in new environments as I work well under pressure and 
+                            it allows me to analyse and reflect on how much I have and can continue to improve. I currently have experience working in both 
+                            the back and front end of businesses such as retail and hospitality as well as minor experience in web development. After completing 
+                            my Bachelor’s in Computer Science, I am now aiming for a more fulfilling career in my chosen field. I am open-minded and love to 
+                            discuss the differing opinions between people, as well as research topics to further my knowledge as an individual.</p>
+                    </div>
+                    <div id="main-work" class="is-hide">
+                        <h1>Work</h1>
+                        <p>I am curious individual and love to analyse and understand how systems operate. This translates positively to my career, as my
+                            interest fuels my desire to know more. I spend as much time as I can building my own projects, which can be viewed below.
+                        </p>
+                        <h2>Software Development</h2>
+                        <p>To date, I am currently a Junior Web Developer who is seeking to gain experience in the workforce to become a Full-Stack Developer.</p>
+                        <h2>Languages</h3>
+                            <ul>
+                                <li>Golang</li>
+                                <li>Java/Javascript</li>
+                                <li>Python</li>
+                                <li>MySQL</li>
+                                <li>Git Repository Management</li>
+                            </ul>
+                    </div>
+                    <div id="main-ambitions" class="is-hide">
+                        <h1>Ambitions</h1>
+                        <p>In the future, I plan to learn more about Data Science and breach into that field of study. My interest in this field originates from 
+                            completing my Bachelor of Computer Science, where I had one topic called 'Heuristic Optimisation' on Machine Learning. It just 
+                            fascinated me that we could produce systems that could be so specialised and although biased, in some cases outperform a human. 
+                            I am also interested in Neuromorphic Computing, however, feel as though this subject is too complex and out of reach for my present self. 
+                        </p>
+                        <h2>10 Year plan</h2>
+                        <p>For the next 5 years, I plan to gain experience in Full-Stack Web Developer and gain capital to develop my financial situation.
+                            Then depending on my situation I would like to begin studying Data Science.</p>
+                    </div>
                 </div>
-                <div id="main-aboutme" class="is-hide">
-                    <h1>About Me</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-                <div id="main-work" class="is-hide">
-                    <h1>Work</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-                <div id="main-ambitions" class="is-hide">
-                    <h1>Ambitions</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
+                <nav>
+                    <ul>
+                        <li><a onclick="aboutme()">About Me</a></li>
+                        <li><a onclick="work()">Work</a></li>
+                        <li><a onclick="ambitions()">Ambitions</a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav>
-                <ul>
-                    <li><a onclick="aboutme()">About Me</a></li>
-                    <li><a onclick="work()">Work</a></li>
-                    <li><a onclick="ambitions()">Ambitions</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="main-bottom-panel-projects">
-            <h2>Project Repositories</h2>
-            <table id="repo-table">
-                <tr id="table-headers">
-                    <th id="table-projectname">Project Name <br>(Link on Name)</br></th>
-                    <th>Description</th>
-                    <th>Language</th>
-                    <th>Last Commit</th>
-                </tr>
-                <tr>
-                    <th><a href="https://github.com/DartagnanBluhm/govisualiser">Sorting Visualiser</a></th>
-                    <th>A web application that visualises the behaviours that different sorting algorithms display. Backend is written in Golang. Frontend utilizes Javascript, HTML, CSS.</th>
-                    <th>Golang, Javascript, HTML, CSS</th>
-                    <th>27 Mar 2021, 19:50 GMT+10:30</th>
-                </tr>
-            </table>
+            <div class="main-bottom-panel-projects">
+                <h2>Project Repositories</h2>
+                <table id="repo-table">
+                    <tr id="table-headers">
+                        <th id="table-projectname">Project Name <br>(Link on Name)</br></th>
+                        <th>Description</th>
+                        <th id="table-language">Language</th>
+                        <th id="table-commit">Last Commit</th>
+                    </tr>
+                    <tr>
+                        <th><a href="https://github.com/DartagnanBluhm/govisualiser">Sorting Visualiser</a></th>
+                        <th>A web application that visualises the behaviours that different sorting algorithms display.
+                            Backend is written in Golang. Frontend utilizes Javascript, HTML, CSS.</th>
+                        <th>Golang, Javascript, HTML, CSS</th>
+                        <th>27 Mar 2021, 19:50 GMT+10:30</th>
+                    </tr>
+                </table>
+            </div>
         </div>
         <footer id="footer"></footer>
     </div>

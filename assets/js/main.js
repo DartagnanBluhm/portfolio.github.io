@@ -72,6 +72,7 @@ function ambitions() {
   }
 }
 
+
 function show(s) {
   document.getElementById(s).className = "";
 }
